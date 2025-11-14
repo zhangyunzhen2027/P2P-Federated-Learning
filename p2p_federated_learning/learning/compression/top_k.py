@@ -4,7 +4,7 @@ import numpy as np
 
 from p2p_federated_learning.learning.compression.base_strategy  import TensorCompressor
 
-class TopKSparsification2(TensorCompressor):
+class TopKSparsification(TensorCompressor):
     """
     Top-K sparsification.
     

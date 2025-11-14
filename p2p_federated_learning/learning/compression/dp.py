@@ -12,7 +12,7 @@ from p2p_federated_learning.learning.compression.base_strategy  import TensorCom
 dp.enable_features("contrib")
 
 
-class DifferentialPrivacyCompressor2(TensorCompressor):
+class DifferentialPrivacyCompressor(TensorCompressor):
     """
     Post-Training Local Differential Privacy compressor.
     

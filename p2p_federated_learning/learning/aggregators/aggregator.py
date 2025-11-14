@@ -2,10 +2,10 @@ import threading
 
 import numpy as np
 
-from p2pfl.learning.frameworks.p2pfl_model import P2PFLModel
+from p2p_federated_learning.learning.framework.p2p_framework import P2PFLModel
 from p2pfl.management.logger import logger
 from p2pfl.settings import Settings
-from p2pfl.utils.node_component import NodeComponent
+from p2p_federated_learning.utils.node_component import NodeComponent
 
 class SimpleAggregator(NodeComponent):
     """

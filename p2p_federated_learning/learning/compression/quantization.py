@@ -8,7 +8,7 @@ import numpy as np
 from p2p_federated_learning.learning.compression.base_strategy  import TensorCompressor
 
 
-class PTQuantization2(TensorCompressor):
+class PTQuantization(TensorCompressor):
     """
     Post-Training Quantization (PTQ).
     

@@ -17,7 +17,7 @@ COMPRESSION_STRATEGIES_REGISTRY = {
 }
 
 
-class CompressionManager2:
+class CompressionManager:
     """
     Compression manager for Quantization, DP, Top-K, and zlib.
     
@@ -53,7 +53,7 @@ class CompressionManager2:
         Raises:
             ValueError: If unknown compression technique is specified.
         """
-        registry = CompressionManager2.get_registry()
+        registry = CompressionManager.get_registry()
         applied_techniques = []
         byte_compressor: ByteCompressor | None = None
         encoder_key: str | None = None
@@ -112,7 +112,7 @@ class CompressionManager2:
         Raises:
             ValueError: If data format is invalid or decompression fails.
         """
-        registry = CompressionManager2.get_registry()
+        registry = CompressionManager.get_registry()
         raw_data = pickle.loads(data)
 
         encoder_key = raw_data.get("byte_compressor", None)

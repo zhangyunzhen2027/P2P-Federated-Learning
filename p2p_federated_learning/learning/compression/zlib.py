@@ -4,8 +4,7 @@ import zlib
 
 from p2p_federated_learning.learning.compression.base_strategy import ByteCompressor
 
-
-class ZlibCompressor2(ByteCompressor):
+class ZlibCompressor(ByteCompressor):
     """
     Simplified lossless compression using zlib.
     
