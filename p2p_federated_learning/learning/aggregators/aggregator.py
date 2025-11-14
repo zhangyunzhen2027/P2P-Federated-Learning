@@ -86,6 +86,19 @@ class SimpleAggregator(NodeComponent):
 
     def get_aggregated_models(self) -> list[str]:
         """
+        Get the list of moedls that have been aggregated.
+
+        Returns:
+            The list of the node that has joined in the aggregation
+
+        """
+        models_added = []
+        for n in self.__models:
+            models_added += n.get_contributors()
+        return models_added
+    
+    def get_aggregated_models(self) -> list[str]:
+        """
         Get the list of aggregated models。
 
         Returns:

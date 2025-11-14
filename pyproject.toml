@@ -9,7 +9,8 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
 dependencies = [
-    "numpy (>=2.3.4,<3.0.0)"
+    "numpy (>=2.3.4,<3.0.0)",
+    "opendp (>=0.14.1,<0.15.0)"
 ]
 
 
