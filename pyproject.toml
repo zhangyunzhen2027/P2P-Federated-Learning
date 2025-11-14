@@ -1,0 +1,18 @@
+[project]
+name = "p2p-federated-learning"
+version = "0.1.0"
+description = "a framework of p2p federated learning"
+authors = [
+    {name = "Shengen Li, Yunzhen Zhang, Shengen Li"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "numpy (>=2.3.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
