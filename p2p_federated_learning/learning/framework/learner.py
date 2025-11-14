@@ -6,7 +6,7 @@ import numpy as np
 
 from p2p_federated_learning.learning.aggregators.aggregator import Aggregator
 from p2p_federated_learning.learning.dataset.p2pfl_dataset import P2PFLDataset
-from p2p_federated_learning.framework.p2p_framework import P2PFLModel
+from p2p_federated_learning.learning.framework.p2p_framework import P2PFLModel
 from p2p_federated_learning.utils.node_component import NodeComponent, allow_no_addr_check
 
 

@@ -6,7 +6,7 @@ from typing import Any
 import numpy as np
 
 from p2p_federated_learning.learning.compression.manager import CompressionManager
-from p2p_federated_learning.learning.frameworks.exceptions import DecodingParamsError
+from p2p_federated_learning.learning.framework.exceptions import DecodingParamsError
 
 
 class P2PFLModel:

@@ -7,7 +7,7 @@ from p2pfl.management.logger import logger
 from p2pfl.settings import Settings
 from p2p_federated_learning.utils.node_component import NodeComponent
 
-class SimpleAggregator(NodeComponent):
+class Aggregator(NodeComponent):
     """
     A simple aggregator that only sopports FedAvg algorithm
 

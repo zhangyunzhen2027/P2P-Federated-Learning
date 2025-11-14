@@ -7,28 +7,28 @@ from p2p_federated_learning.management.logger import logger
 
 
 class LearnerHead:
-    """Creating learners based on the model framework (only PyTorch supported)."""
+    """Creating learners based on the model framework (only support PyTorch)."""
 
     @classmethod
     def create_learner(cls, model: P2PFLModel) -> type[Learner]:
         """
-        根据模型框架创建 learner（目前只支持 PyTorch）。
+        create learner。
 
         Args:
-            model: 要封装的模型。
+            model: the models that need to be encapsulated。
 
         Returns:
-            Learner 类。
+            Learner class。
 
         Raises:
-            ValueError: 如果框架不支持。
+            ValueError: if the framework does not support。
 
         """
         framework = model.get_framework()
         if framework == Framework.PYTORCH.value:
-            from p2p_federated_learning.learning.framework.pytorch.lightning_learner import LightningLearner
+            from p2p_federated_learning.learning.framework.pytorch.learner import Learner
 
-            return LightningLearner
+            return Learner
         else:
             logger.error("LearnerFactory", f"Unsupported framework: {framework}")
             raise ValueError(f"Unsupported framework: {framework}")
